@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+}
+
+.background {
+    position: relative;
+    background: url(./assets/fondoPresentacion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+Me da un problema con el boton de registrarse, no me deja presionarlo
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+    
+}
+*/
+
+/* 
+Cambiarlo a before, o en su defecto por after
+
+.boxBottomLeft, .boxBottomRight {
+    display: block;
+    position: absolute;
+    background-color: black;
+    height: 600px;
+    width: 700px;
+    top: 400px;
+    z-index: -1;
+}
+.boxBottomLeft {
+    left: 0;
+    border-top-right-radius: 100%;
+}
+.boxBottomRight {
+    right: 0;
+    border-top-left-radius: 100%;
+}
+*/
+
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    gap: 1rem;
+    height: 60px;
+    width: 100%;
+    justify-content: space-around;
+    box-shadow: 12px 1px 20px 1px;
+}
+
+.afterHeader {
+    border-bottom: 1px solid black;
+}
+
+
+.searchBar {
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    display: block;
+    height: 35px;
+    width: 200px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: none;
+}
+
+.btnSubm {
+    width: 36px;
+    height: 36px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 25px;
+    background-color: darkblue;
+    border: 0.5px solid;
+    cursor: pointer;
+    color: black;
+
+}
+
+.btnSubm i{
+    font-size: 22px;
+    color: white;
+}
+
+
+.boxLink {
+    display: flex;
+    gap: 1rem;
+}
+
+.boxLink li {
+    list-style: none;
+}
+
+.link {
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.register {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 200, 1);
+    transition: ease 0.3s;
+}
+
+.register:hover{
+    background-color: rgb(2, 2, 138);
+}
+
+.bannerContent {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.boxContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.btnRegister {
+    background-color: rgba(0, 0, 200, 1);
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: ease 0.3s;
+    margin-top: 30px;
+}
+
+.btnRegister:hover {
+    background-color: rgb(2, 2, 138);
+}
+
+
+
+.mainContent {
+    background-color: rgba(0, 0, 0, 0.9);
+    background-position: center;
+    height: 400vh;
+}
