@@ -47,6 +47,7 @@
 
 h1 {
     font-family: Poppins italic;
+    font-size: 60px;
 }
 
 .movieImg {
@@ -116,6 +117,13 @@ h1 {
     .details {
         height: 100%;
     }
+    .movieImg {
+        height: 350px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
 
     iframe {
         width: 400px;
@@ -174,22 +182,21 @@ h1 {
 
 
     .mostDetail .movieImg{
-        height: 200px;
+        height: 300px;
+        margin: 50px 10%;
     }
 
     .movieTitle {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .credits {
-        grid-template-columns: repeat(2, 1fr);
-        font-size: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 16px;
     }
 
     iframe {
-        width: 350px;
+        width: 420px;
     }
-
-
     
 }
