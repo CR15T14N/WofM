@@ -1,0 +1,91 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://png.pngtree.com/thumb_back/fw800/background/20240105/pngtree-hand-drawn-cartoon-cinema-elements-seamless-texture-pattern-in-a-trendy-image_13928795.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px auto;
+    gap: 10px;
+
+    
+
+}
+
+.imgLogo {
+    margin: 10px auto;
+    height: 200px;
+}
+
+
+.logIn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    align-items: center;
+    justify-content: center;
+}
+
+
+input {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: none;
+    border-right: none; 
+    font-size: 14px;
+    height: 40px;
+    width: 350px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+input:hover {
+    box-shadow: 
+    0 -5px 10px rgba(0, 0, 0, 0.5),
+    0 5px 10px rgba(0, 0, 0, 0.5);  
+}
+
+.submit {
+    border: 1px solid black;
+    height: 35px;
+    width: 150px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.submit:hover {
+    opacity: 0.9;
+    box-shadow: 0 1px 7px 1px;
+}
+
+.btnRegister {
+    color: white;
+    cursor: pointer;
+}
+
+.warnings {
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+}
+
