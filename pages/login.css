@@ -5,26 +5,64 @@
 }
 
 body {
-    background: url(https://png.pngtree.com/thumb_back/fw800/background/20240105/pngtree-hand-drawn-cartoon-cinema-elements-seamless-texture-pattern-in-a-trendy-image_13928795.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to right, #000000, #01014d 25%, #000049 75%, #000000);
 }
+
+.globalBox {
+    display: flex;
+    margin: 50px auto;
+    border-radius: 7px;
+    width: 1000px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 30px rgba(227, 228, 237, 0.47);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 500px;
+}
+
+
+.imgDivBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    border-radius: 7px;
+    width: 520px;
+    border-right: 1px solid;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 1)
+        ), url(../assets/fondoPresentacion.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 0 5px -2px rgba(0, 0, 0, 0.5);
+
+}
+
+.titleForm {
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tips {
+    color: white;
+    padding: 15px 20px;
+}
+.mainP {
+    font-size: 18px;
+}
+
 .formBox {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5px auto;
-    gap: 10px;
+    background-color: white;
+    width: 480px;
+    border-radius: 7px;
 
-    
-
-}
-
-.imgLogo {
-    margin: 10px auto;
-    height: 200px;
 }
 
 
@@ -32,21 +70,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 400px;
-    height: 300px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    align-items: center;
-    justify-content: center;
+    height: 250px;
 }
 
 
 input {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(5, 3, 143, 0.2);
+    border-bottom: 1px solid rgba(5, 3, 143, 0.2);
     border-left: none;
     border-right: none; 
     font-size: 14px;
@@ -58,34 +88,47 @@ input {
 
 input:hover {
     box-shadow: 
-    0 -5px 10px rgba(0, 0, 0, 0.5),
-    0 5px 10px rgba(0, 0, 0, 0.5);  
+    0 -5px 10px rgba(1, 26, 247, 0.4),
+    0 5px 10px rgba(1, 26, 247, 0.4);  
 }
 
 .submit {
-    border: 1px solid black;
+    background-color: #010163;
+    color: white;
     height: 35px;
     width: 150px;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
     cursor: pointer;
 }
 
 .submit:hover {
-    opacity: 0.9;
-    box-shadow: 0 1px 7px 1px;
+    box-shadow: 0 0 20px  rgba(1, 26, 247, 0.6);
+    background-color: #000049;
 }
 
 .btnRegister {
-    color: white;
+    color: #000049;
     cursor: pointer;
+}
+
+.btnRegister:active {
+    color: purple;
 }
 
 .warnings {
     display: block;
     width: 200px;
+    height: 50px;
     text-align: center;
     margin: auto;
     color: red;
-    padding-top: 20px;
 }
 
+
+.box {
+    transition: filter 0.5s ease;
+}
+
+.blur {
+    filter: blur(10px);
+}

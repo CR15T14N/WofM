@@ -9,7 +9,8 @@ formLogin.addEventListener("submit", (e)=>{
   e.preventDefault()
     let warnings = "";
     let entrar = false;
-    let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let regexEmail = /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;
+    //let regexPassword = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
     parrafo.innerHTML = "";
    if (!regexEmail.test(email.value)) {
     warnings += `El email no es valido <br>`
@@ -29,3 +30,17 @@ formLogin.addEventListener("submit", (e)=>{
 })
 
 
+// estilos para los divs, con el efecto blur
+
+const imgDivBox = document.getElementById("imgDivBox");
+const formBox = document.getElementsById("formBox");
+
+function handleHover(id) {
+  let otherId = id === 'imgDivBox' ? 'formBox' : 'imgDivBox';
+  document.getElementById(otherId).classList.add('blur');
+}
+
+function handleMouseOut(id) {
+  let otherId = id === 'imgDivBox' ? 'formBox' : 'imgDivBox';
+  document.getElementById(otherId).classList.remove('blur');
+}
